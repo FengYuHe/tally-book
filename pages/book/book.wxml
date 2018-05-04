@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="book-item" wx:for="{{books}}" wx:for-item="book" wx:key="{{book.index}}">
+    <image class="book-item-img" src="{{book.cover}}"></image>
+    <text class="book-item-text">{{book.name}}</text>
+  </view>
+  <view>
+    <text wx:if="{{isBook}}">暂没记账本，建一个呗</text>
+  </view>
+</view>

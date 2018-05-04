@@ -1,0 +1,16 @@
+<view>
+  <text>这是记事本页面</text>
+  <view class="items" wx:key="{{new Date()}}}" wx:for="{{array}}">
+    <text>{{item.name}}</text>:
+    <text>{{item.price}}</text>
+  </view>
+  <view>
+    <text>名字：</text>
+    <input type="text" bindinput="setName"/>
+    <text>价钱：</text>
+    <input type="text" bindinput="setPrice" />
+  </view>
+  <view class="add" bindtap="addItem">
+    <text>增加</text>
+  </view>
+</view>
